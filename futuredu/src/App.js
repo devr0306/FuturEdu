@@ -5,7 +5,7 @@ import Body from "./components/Body"
 
 function App(){
     return(
-        <div class="container">
+        <div className="container">
             <Header />
             <Body />
         </div>
