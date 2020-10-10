@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import Header from "./components/Header"
 import Homepage from "./components/Homepage";
 import Prerequisites from "./components/Prerequisites";
-import EmerginTech from "./components/EmergingTech";
+import Skills from "./components/Skills";
 
 function App(){
     return(
@@ -13,7 +13,7 @@ function App(){
             <Switch>
                 <Route path="/" component={Homepage} exact/>
                 <Route path="/prereqs" component={Prerequisites} />
-                <Route path="/etech" component={EmerginTech} />
+                <Route path="/skills" component={Skills} />
 		    </Switch>
         </div>
     )

@@ -4,7 +4,7 @@ import Card from "./Card";
 
 import StocksImg from "../assets/stocks.jpg";
 
-function EmerginTech(){
+function Skills(){
     return(
         <div className="container">
         <div className="col-md-4 mb-3">
@@ -20,4 +20,4 @@ function EmerginTech(){
     )
 }
 
-export default EmerginTech;
+export default Skills;
