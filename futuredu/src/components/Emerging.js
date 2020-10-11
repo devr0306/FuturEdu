@@ -1,26 +1,20 @@
 import React from "react";
 
-import Card from "./Card";
+import Dropdown from "./Dropdown";
 
-import substopics from "../datasets/subtopics";
-
-function Emerging() {
-    return (
-        <div className="container">
-            <div className="row">
-                {substopics.filter(s => s.topicID == 1).map(s => {
-                    return (
-                        <div className="col-md-4 mb-3">
-                            <Card
-                                topic={s.name}
-                                id="phy"
-                                image={s.imageURL}
-                                description={s.description}
-                            />
-                        </div>
-                    )
-                })}
-            </div>
+function Emerging(){
+    return(
+        <div>
+            <Dropdown
+                topic="Machine Learning"
+                prerequisites="some prerequisites"
+                description="Some description"
+            />
+            <Dropdown
+                topic="Deep Learning"
+                prerequisites="some prerequisites"
+                description="Some description"
+            />
         </div>
     )
 }
