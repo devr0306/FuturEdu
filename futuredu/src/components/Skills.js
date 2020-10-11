@@ -3,9 +3,9 @@ import React from "react";
 import Card from "./Card";
 
 import StocksImg from "../assets/stocks.jpg";
-var skills = require('../datasets/skills.js')
-
 import subtopics from "../datasets/subtopics";
+
+var skills = require('../datasets/skills.js')
 
 function Skills() {
     return (
