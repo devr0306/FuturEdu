@@ -5,16 +5,18 @@ import Header from "./components/Header"
 import Homepage from "./components/Homepage";
 import Prerequisites from "./components/Prerequisites";
 import Skills from "./components/Skills";
+import Emerging from "./components/Emerging";
 
-function App(){
-    return(
+function App() {
+    return (
         <div className="container">
             <Header />
             <Switch>
-                <Route path="/" component={Homepage} exact/>
+                <Route path="/" component={Homepage} exact />
                 <Route path="/prereqs" component={Prerequisites} />
+                <Route path="/etech" component={Emerging} />
                 <Route path="/skills" component={Skills} />
-		    </Switch>
+            </Switch>
         </div>
     )
 }
