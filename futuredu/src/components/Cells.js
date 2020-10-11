@@ -2,18 +2,18 @@ import React from "react";
 
 import Card from "./Card";
 
-import substopics from "../datasets/subtopics";
+import subskills from "../datasets/subskills";
 
-function Emerging() {
+function Cells() {
     return (
         <div className="container">
             <div className="row">
-                {substopics.filter(s => s.topicID == 1).map(s => {
+                {subskills.filter(s => s.topicID == 14).map(s => {
                     return (
                         <div className="col-md-4 mb-3">
                             <Card
                                 topic={s.name}
-                                id="phy"
+                                id={s.name}
                                 image={s.imageURL}
                                 description={s.description}
                             />
@@ -25,4 +25,4 @@ function Emerging() {
     )
 }
 
-export default Emerging;
+export default Cells;

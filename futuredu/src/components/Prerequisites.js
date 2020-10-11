@@ -13,10 +13,9 @@ function Prerequisites() {
                         <div className="col-md-4 mb-3">
                             <Card
                                 topic={s.name}
-                                id="phy"
+                                id={s.name}
                                 image={s.imageURL}
                                 description={s.description}
-                                prerequisites="Some prerequisites"
                             />
                         </div>
                     )

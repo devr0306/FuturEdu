@@ -292,46 +292,46 @@ module.exports = [
     {
         name: "Distributions",
         description: "",
-        skillID: 26
+        skillID: 25
     },
     {
         name: "Linear Regression",
         description: "",
-        skillID: 27
+        skillID: 25
     },
     {
         name: "Random Variables",
         description: "",
-        skillID: 28
+        skillID: 25
     },
     {
         name: "Studies",
         description: "",
-        skillID: 29
+        skillID: 25
     },
     {
         name: "Probability",
         description: "",
-        skillID: 30
+        skillID: 25
     },
     {
         name: "Testing",
         description: "",
-        skillID: 31
+        skillID: 25
     },
     {
         name: "Beginner Series",
         description: "",
-        skillID: 32
+        skillID: 26
     },
     {
         name: "Intermediate Series",
         description: "",
-        skillID: 33
+        skillID: 27
     },
     {
         name: "Advanced Series",
         description: "",
-        skillID: 34
+        skillID: 28
     }
 ]
