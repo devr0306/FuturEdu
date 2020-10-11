@@ -1,28 +1,19 @@
 import React from "react";
 
-import Card from "./Card";
-
-import StocksImg from "../assets/stocks.jpg";
-import subtopics from "../datasets/subtopics";
+import Dropdown from "./Dropdown";
 
 var skills = require('../datasets/skills.js')
 
 function Skills() {
     return (
-        <div className="">
-            <div className="col-md-4 mb-3">
-                {
-                    subtopics.filter(s => s.topicID == 2).map(s => {
-                        return (<Card
-                            topic={s.name}
-                            id="stockMarket"
-                            image={StocksImg}
-                            description={s.description}
-                            prerequisites="Some prerequisites"
-                        />)
-                    })
-                }
-            </div>
+        <div className="container">
+            <Dropdown 
+                topic="Stock Market"
+                id="stocks"
+                prerequisites = "some prerequisites"
+                description = "some description"
+            />
+
         </div>
     )
 }
