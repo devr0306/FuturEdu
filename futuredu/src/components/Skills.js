@@ -4,19 +4,25 @@ import Card from "./Card";
 
 import StocksImg from "../assets/stocks.jpg";
 
-function Skills(){
-    return(
+import subtopics from "../datasets/subtopics";
+
+function Skills() {
+    return (
         <div className="container">
-        <div className="col-md-4 mb-3">
-            <Card 
-                topic="Stock Market"
-                id="stockMarket"
-                image={StocksImg}
-                description="Some Stock Market stuff"
-                prerequisites="Some prerequisites"
-                />
+            <div className="col-md-4 mb-3">
+                {
+                    subtopics.filter(s => s.topicID == 2).map(s => {
+                        return (<Card
+                            topic={s.name}
+                            id="stockMarket"
+                            image={StocksImg}
+                            description={s.description}
+                            prerequisites="Some prerequisites"
+                        />)
+                    })
+                }
             </div>
-        </div> 
+        </div>
     )
 }
 
