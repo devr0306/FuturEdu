@@ -2,6 +2,7 @@ import React from "react";
 
 import Dropdown from "./Dropdown";
 
+var skills = require('../datasets/skills.js')
 
 function Skills() {
     return (
@@ -12,6 +13,7 @@ function Skills() {
                 prerequisites = "some prerequisites"
                 description = "some description"
             />
+
         </div>
     )
 }
