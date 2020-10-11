@@ -9,7 +9,7 @@ var skills = require('../datasets/skills.js')
 
 function Skills() {
     return (
-        <div className="container">
+        <div className="">
             <div className="col-md-4 mb-3">
                 {
                     subtopics.filter(s => s.topicID == 2).map(s => {
