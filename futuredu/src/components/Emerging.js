@@ -4,11 +4,11 @@ import Card from "./Card";
 
 import substopics from "../datasets/subtopics";
 
-function Prerequisites() {
+function Emerging() {
     return (
         <div className="container">
             <div className="row">
-                {substopics.filter(s => s.topicID == 0).map(s => {
+                {substopics.filter(s => s.topicID == 1).map(s => {
                     return (
                         <div className="col-md-4 mb-3">
                             <Card
@@ -26,4 +26,4 @@ function Prerequisites() {
     )
 }
 
-export default Prerequisites;
+export default Emerging;
