@@ -30,11 +30,6 @@ module.exports = [
         topicID: 1
     },
     {
-        name: "Deep Learning",
-        description: "",
-        topicID: 1,
-    },
-    {
         name: "Stock Market",
         description: "Financial independence is a big problem in the world, where most people don’t use their money wisely. The stock market is a place where financial miracles happen, either good or bad. So, learning about the stock market is important to keep the miracles good, which is what these 3 series do. ",
         topicID: 2,
