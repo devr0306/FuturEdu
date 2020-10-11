@@ -80,7 +80,7 @@ function Homepage(){
             </div>
             <div className="row d-flex">
                 <div className='col col-md description-1' data-aos="fade-left">
-                    <h1>With <span className='future'>specialized prerequisites</span> to <br />removing all the obstacles from your learning</h1>
+                    <h1>With <span className='future'>specialized prerequisites</span> to <br />remove all the obstacles from your learning</h1>
                     <Link to="/prereqs"><button className='learn'>Learn</button></Link>
                 </div>  
                 <div class='svg-div col-md col'>
@@ -171,7 +171,7 @@ function Homepage(){
                 </svg>                
                 </div>
                 <div className='col col-md description-2'>
-                    <h2>Learn exciting skills like<span className='future'> Stock Market</span> which are not taught in school &amp; colleges</h2>
+                    <h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
                     <Link to="/etech"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
