@@ -9,7 +9,7 @@ function Emerging(){
                 topic="Artificial Intelligence"
                 id="ml"
                 prerequisites="some prerequisites"
-                description={'Machine Learning\\n' +
+                description={'Machine Learning\n' +
                 '-	Models\n' +
                 "o	Machine Learning by Stanford- https://www.coursera.org/learn/machine-learning\n" +
                 "o	YouTube- https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU\n\n" +

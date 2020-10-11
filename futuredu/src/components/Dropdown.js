@@ -4,14 +4,14 @@ const Dropdown = props => {
     return(
         <div id="accordion">
             <div className="card">
-                <div className="card-header" id="headingOne">
-                    {/* <img className="card-image-left" src={props.image} alt={"Image of " + props.topic} /> */}
-                    <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div className="card-header">
+                    <img className="card-image-top" src={props.image} alt={"Image of " + props.topic} />
+                    <a className="card-link" data-toggle="collapse" href={"#collapse"+props.id}>
                         {props.topic}
-                    </button>
+                    </a>
                 <p>Prerequisites : {props.prerequisites}</p>
                 </div>
-                <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id={"collapse"+props.id} className="collapse show" data-parent="#accordion">
                     <div className="card-body">
                         {props.description}
                     </div>
