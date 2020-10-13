@@ -292,82 +292,46 @@ module.exports = [
     {
         name: "Distributions",
         description: "",
-<<<<<<< HEAD
         skillID: 26
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Linear Regression",
         description: "",
-<<<<<<< HEAD
         skillID: 27
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Random Variables",
         description: "",
-<<<<<<< HEAD
         skillID: 28
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Studies",
         description: "",
-<<<<<<< HEAD
         skillID: 29
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Probability",
         description: "",
-<<<<<<< HEAD
         skillID: 30
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Testing",
         description: "",
-<<<<<<< HEAD
         skillID: 31
-=======
-        skillID: 25
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Beginner Series",
         description: "",
-<<<<<<< HEAD
         skillID: 32
-=======
-        skillID: 26
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Intermediate Series",
         description: "",
-<<<<<<< HEAD
         skillID: 33
-=======
-        skillID: 27
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     },
     {
         name: "Advanced Series",
         description: "",
-<<<<<<< HEAD
         skillID: 34
-=======
-        skillID: 28
->>>>>>> 46f37bc75adf47c3f77177fb9d7bb3ed95c3ff03
     }
 ]

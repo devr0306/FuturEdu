@@ -11,7 +11,7 @@ const Dropdown = props => {
                     </a>
                 <p>Prerequisites : {props.prerequisites}</p>
                 </div>
-                <div id={"collapse"+props.id} className="collapse show" data-parent="#accordion">
+                <div id={"collapse"+props.id} className="collapse" data-parent="#accordion">
                     <div className="card-body">
                         {props.description}
                     </div>

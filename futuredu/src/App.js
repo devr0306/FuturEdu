@@ -9,7 +9,7 @@ import Emerging from "./components/Emerging";
 
 function App() {
     return (
-        <div className="container">
+        <div className="">
             <Header />
             <Switch>
                 <Route path="/" component={Homepage} exact />
