@@ -5,7 +5,7 @@ const Dropdown = props => {
         <div id="accordion">
             <div className="card">
                 <div className="card-header">
-                    <img className="card-image-top" src={props.image} alt={"Image of " + props.topic} />
+                    {/* <img className="card-image-top" src={props.image} alt={"Image of " + props.topic} /> */}
                     <a className="card-link" data-toggle="collapse" href={"#collapse"+props.id}>
                         {props.topic}
                     </a>
