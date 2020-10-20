@@ -1,11 +1,15 @@
 import React from "react";
-import '../style/home.css';
 import { Link } from "react-router-dom";
+
+import '../style/home.css';
+
+import Carousel from "./Carousel";
 
 function Homepage(){
     return(
 
-        <div>
+        <div className="container-fluid">
+            <Carousel />
             <div className="row d-flex">
                 <div class='svg-div col-md col'>
                 <svg width="846" height="761" viewBox="0 0 846 761" fill="none" xmlns="http://www.w3.org/2000/svg" data-aos="fade-left">
