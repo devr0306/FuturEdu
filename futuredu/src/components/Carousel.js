@@ -5,7 +5,7 @@ import "../style/carousel.css";
 
 import EmergingTechImg from "../assets/earth.jpg";
 import SkillsImg from "../assets/stocks_unsplash.jpg";
-import PrereqsImg from "../assets/coding.jpg";
+import PrereqsImg from "../assets/coding2.jpg";
 
 function Carousel() {
     return (
