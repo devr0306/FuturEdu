@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "../style/carousel.css";
 
 import EmergingTechImg from "../assets/earth.jpg";
-import SkillsImg from "../assets/dart.jpg";
-import PrereqsImg from "../assets/tools.jpg";
+import SkillsImg from "../assets/stocks_unsplash.jpg";
+import PrereqsImg from "../assets/coding.jpg";
 
 function Carousel() {
     return (
