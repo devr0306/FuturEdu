@@ -1,11 +1,10 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 
 import Header from "./components/Header"
 import Homepage from "./components/Homepage";
-import Prerequisites from "./components/Prerequisites";
-import Skills from "./components/Skills";
-import Emerging from "./components/Emerging";
+import LevelOne from "./components/LevelOne";
+import LevelTwo from "./components/LevelTwo";
 
 function App() {
     return (
@@ -13,9 +12,10 @@ function App() {
             <Header />
             <Switch>
                 <Route path="/" component={Homepage} exact />
-                <Route path="/prereqs" component={Prerequisites} />
-                <Route path="/etech" component={Emerging} />
-                <Route path="/skills" component={Skills} />
+                <Route path="/prereqs" component={LevelOne} />
+                <Route path="/etech" component={LevelOne} />
+                <Route path="/skills" component={LevelOne} />
+                <Route path="/algebra" component={LevelTwo} />
             </Switch>
         </div>
     )
