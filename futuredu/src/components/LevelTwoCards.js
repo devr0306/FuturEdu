@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../style/level-two-cards.css";
 
 const LevelTwoCards = props => {
     return (
-        <div className="card mb-3">
+        <Link to="/algebra">
+
+        <div className="card mb-3 text-dark">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={props.image} className="card-img" alt={"Image of " + props.name} />
@@ -25,7 +28,9 @@ const LevelTwoCards = props => {
                     </div>
                 </div>
             </div>
-        </div>    )
+        </div>    
+        </Link>
+    )
 }
 
 export default LevelTwoCards;

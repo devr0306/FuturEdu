@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Homepage from "./components/Homepage";
 import LevelOne from "./components/LevelOne";
 import LevelTwo from "./components/LevelTwo";
+import LevelThree from "./components/LevelThree";
 
 function App() {
     return (
@@ -15,7 +16,9 @@ function App() {
                 <Route path="/prereqs" component={LevelOne} />
                 <Route path="/etech" component={LevelOne} />
                 <Route path="/skills" component={LevelOne} />
-                <Route path="/algebra" component={LevelTwo} />
+                <Route path="/math" component={LevelTwo} />
+                <Route path="/algebra" component={LevelThree} />
+
             </Switch>
         </div>
     )

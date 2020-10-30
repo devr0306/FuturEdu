@@ -5,12 +5,12 @@ const LevelOneCards = props => {
 
     return (
         <div className="card text-dark" id={props.id}>
-            <Link to="/algebra">
+            <Link to="/math">
                 <img src={props.image} className="card-img-top" alt={props.name} />
             </Link>
 
             <div className="card-body">
-                <Link to="/algebra">
+                <Link to="/math">
                     <h5 className="card-title d-inline">{props.name}</h5>
                 </Link>
                 <button 
