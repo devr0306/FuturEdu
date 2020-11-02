@@ -20,7 +20,7 @@ function Carousel() {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="carousel-image" src={EmergingTechImg} alt="Emerging Tech" />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption">
                         <Link to="/etech">
                             <h5 className="text-light font-weight-bold">Learn about Emerging Technologies</h5>
                             <p className="text-light">
@@ -32,7 +32,7 @@ function Carousel() {
                 </div>
                 <div className="carousel-item">
                     <img className="carousel-image" src={SkillsImg} alt="Skills" />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption">
                         <Link to="/skills">
                                 <h5 className="text-light font-weight-bold">New Skills</h5>
                                 <p className="text-light">
@@ -44,7 +44,7 @@ function Carousel() {
                 </div>
                 <div className="carousel-item">
                     <img className="carousel-image" src={PrereqsImg} alt="Prerequisites" />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption">
                         <Link to="/prereqs">
                                 <h5 className="text-white font-weight-bold">and Many More things!!</h5>
                                 <p className="text-light">

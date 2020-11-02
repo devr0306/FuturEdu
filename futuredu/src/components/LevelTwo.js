@@ -9,7 +9,7 @@ import VectorImage from "../assets/physics.jpg";
 function LevelTwo() {
     return (
         <div className="container">
-            <div className="row mt-5">
+            <div className="row mt-5 mb-3">
                 <div className="col">
                     <Card 
                         id="algebra"
@@ -19,7 +19,7 @@ function LevelTwo() {
                     />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-3">
                 <div className="col">
                     <Card 
                         id="geometry"
@@ -29,7 +29,7 @@ function LevelTwo() {
                     />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-3">
                 <div className="col">
                     <Card 
                         id="vectors"

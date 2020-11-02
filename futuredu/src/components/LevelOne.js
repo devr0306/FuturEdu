@@ -10,7 +10,7 @@ function LevelOne(){
     return(
         <div className="container">
             <div className="row pt-4">
-                <div className="col">
+                <div className="col-md mb-5">
                     <Card 
                         id="ai"
                         name="Artificial Intelligence"
@@ -19,7 +19,7 @@ function LevelOne(){
                         prerequisites="Statistics, Linear Algebra and Multivariate Calculus"
                     />
                 </div>
-                <div className="col">
+                <div className="col-md mb-5">
                     <Card 
                         id="quantumcomp"
                         name="Quantum Computing"
@@ -27,7 +27,7 @@ function LevelOne(){
                         description="Quantum Computing blah blah blah ... !!!!"
                     />
                 </div>
-                <div className="col">
+                <div className="col-md mb-5">
                     <Card 
                         id="id"
                         name="Something Cool"
