@@ -11,8 +11,15 @@ const Dropdown = props => {
         <div className="row">
             <div className="col-10">
                 <div className="card-body pl-5 py-3" id={props.id}>
-                    <h5 className="card-title py-2">{props.name}</h5>
-                    <p className="card-text my-2" id={props.id + "collapse"}>{<Markdown>{props.description}</Markdown>}</p>
+                    <button
+                        className="invisible"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target={"#" + props.id + "collapse"}
+                    >
+                        <h5 className="card-title py-2 visible">{props.name}</h5>
+                    </button>
+                    <p className="card-text my-2 collapse" id={props.id + "collapse"}>{<Markdown>{props.description}</Markdown>}</p>
                 </div>
             </div>
             <div className="col-2 text-center">
