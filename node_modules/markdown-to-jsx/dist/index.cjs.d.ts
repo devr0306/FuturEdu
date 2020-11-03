@@ -1,0 +1,2 @@
+import Markdown from './';
+export default Markdown;
