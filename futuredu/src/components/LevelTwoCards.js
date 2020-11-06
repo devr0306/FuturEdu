@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useRouteMatch, Link } from "react-router-dom";
 
 import "../style/level-two-cards.css";
 
 const LevelTwoCards = props => {
+
+    let { url } = useRouteMatch();
+
     return (
-        <Link to="/algebra">
+        <Link to={`${url}/`+props.id}>
 
         <div className="card mb-3 text-dark">
             <div className="row no-gutters">

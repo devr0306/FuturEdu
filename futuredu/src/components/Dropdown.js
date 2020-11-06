@@ -19,7 +19,7 @@ const Dropdown = props => {
                     >
                         <h5 className="card-title py-2 visible">{props.name}</h5>
                     </button>
-                    <p className="card-text my-2 collapse" id={props.id + "collapse"}>{<Markdown>{props.description}</Markdown>}</p>
+                    <p className="card-text my-2 collapse" id={props.id + "collapse"}>{<Markdown>{props.content}</Markdown>}</p>
                 </div>
             </div>
             <div className="col-2 text-center">
