@@ -1,37 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams,Redirect } from "react-router-dom";
 
 import Card from "./LevelTwoCards";
-
-import LevelTwoData from "../datasets/LevelTwoData";
 
 
 function LevelTwo() {
 
     let { lvltwo } = useParams();
 
-    const CardComponents = LevelTwoData.filter(topic => topic.category === lvltwo).map(filterdTopic => {
-        return(
-            <div className="row mt-4 mb-3">
-                <div className="col">
-                    <Card 
-                        id={filterdTopic.id}
-                        name={filterdTopic.name}
-                        description={filterdTopic.description}
-                        prerequisites={filterdTopic.prerequisites}
-                    />
+    const [ cardsData, setCardsData ] = useState([]);
+
+    useEffect(() => {
+        const fetchCardData = async () => {
+            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvltwo +"?format=json")
+            const cards = await res.json()
+            setCardsData(cards.card_set)
+        }
+        fetchCardData()
+    },[lvltwo])
+
+    let CardComponents;
+
+    if(cardsData){
+        CardComponents = cardsData.map(topic => {
+            return(
+                <div className="row mt-4 mb-3">
+                    <div className="col">
+                        <Card 
+                            id={topic.id}
+                            name={topic.name}
+                            description={topic.description}
+                            prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
+                        />
+                    </div>
                 </div>
-            </div>
-        )
-    })
+            )
+        })
+    }
 
     console.log(CardComponents)
 
     return (
         <div className="container">
-            {Object.entries(CardComponents).length === 0 
-                    ? <Redirect to="/error" />
-                    : CardComponents
+            {!CardComponents
+                ? <Redirect to="/error" />
+                : CardComponents
             }
         </div>
     )

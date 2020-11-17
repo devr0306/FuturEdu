@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Redirect } from "react-router-dom";
 
 import Dropdown from "./Dropdown";
@@ -9,12 +9,23 @@ const LevelThree = () =>{
 
     let { lvlthree } = useParams();
 
-    const dropdownComponents = LevelThreeData.filter(topic => topic.category === lvlthree).map(filteredTopics => {
+    const [ topicData, setTopicData ] = useState([])
+
+    useEffect(() => {
+        const fetchCardData = async () => {
+            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlthree +"?format=json")
+            const cards = await res.json()
+            setTopicData(cards.topic_set)
+        }
+        fetchCardData()
+    },[lvlthree])
+
+    const dropdownComponents = topicData.map(topic => {
         return(
             <Dropdown 
-                id={filteredTopics.id}
-                name={filteredTopics.name}
-                content={filteredTopics.content}
+                id={topic.id_name}
+                name={topic.name}
+                content={topic.content}
             />
         )
     })
@@ -23,10 +34,10 @@ const LevelThree = () =>{
         <div className="container">
             <div className="card bg-light my-4 w-100">
                 <div className="card-header text-center bg-dark text-white h4">Algebra</div>
-                {Object.entries(dropdownComponents).length === 0 
+                {!dropdownComponents
                     ? <Redirect to="/error" />
                     : dropdownComponents
-            }
+                }
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ const LevelOneCards = props => {
         <div className="col-4 mb-5">
             <div className="card text-dark" id={props.id}>
                 <Link to={`${url}/`+props.id}>
-                    <img src={props.image} className="card-img-top" alt={props.name} />
+                    <img src={props.image} className="card-img-top" alt={props.name+"Image"} />
                 </Link>
                 <div className="card-body">
                     <Link to={`${url}/`+props.id}>
