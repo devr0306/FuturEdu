@@ -1,40 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Redirect, useParams } from "react-router-dom";
 
 import Card from "./LevelOneCards";
 
-import AIImage from "../assets/ai_one.jpg";
-import MathImage from "../assets/math.jpg";
-import RandomImage from "../assets/stat.jpg";
+const LevelOne = () => {
 
-function LevelOne(){
+    const [cardsData, setCardsData ] = useState([])
+
+    let { lvlone } = useParams();
+    
+    useEffect(() => {
+        const fetchCardData = async () => {
+            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlone +"?format=json")
+            const cards = await res.json()
+            setCardsData(cards.card_set)
+        }
+        fetchCardData()
+    },[lvlone])
+    
+
+    let CardComponents;
+
+    if(cardsData){
+        CardComponents = cardsData.map(topic => {
+            return(<Card 
+                id={topic.id}
+                name={topic.name}
+                description={topic.description}
+                prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
+            />)
+        })
+    }
+    
     return(
         <div className="container">
-            <div className="row pt-4">
-                <div className="col-md mb-5">
-                    <Card 
-                        id="ai"
-                        name="Artificial Intelligence"
-                        image={AIImage}
-                        description="Learn a lot about Artificial Intelligence, Deep Learning, Neural Networks and much more!!"
-                        prerequisites="Statistics, Linear Algebra and Multivariate Calculus"
-                    />
-                </div>
-                <div className="col-md mb-5">
-                    <Card 
-                        id="quantumcomp"
-                        name="Quantum Computing"
-                        image={MathImage}
-                        description="Quantum Computing blah blah blah ... !!!!"
-                    />
-                </div>
-                <div className="col-md mb-5">
-                    <Card 
-                        id="id"
-                        name="Something Cool"
-                        image={RandomImage}
-                        description="Someting Random that looks cool ... !!!!"
-                    />
-                </div>
+            <div className="row pt-5">
+                {!CardComponents
+                    ? <Redirect to="/error" />
+                    : CardComponents
+                }
             </div>
         </div>
     )
