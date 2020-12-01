@@ -10,12 +10,14 @@ const LevelThree = () =>{
     let { lvlthree } = useParams();
 
     const [ topicData, setTopicData ] = useState([])
+    const [ topicName, setTopicName ] = useState([])
 
     useEffect(() => {
         const fetchCardData = async () => {
             const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlthree +"?format=json")
             const cards = await res.json()
             setTopicData(cards.topic_set)
+            setTopicName(cards.name)
         }
         fetchCardData()
     },[lvlthree])
@@ -33,7 +35,7 @@ const LevelThree = () =>{
     return(
         <div className="container">
             <div className="card bg-light my-4 w-100">
-                <div className="card-header text-center bg-dark text-white h4">Algebra</div>
+                <div className="card-header text-center bg-dark text-white h4">{topicName}</div>
                 {!dropdownComponents
                     ? <Redirect to="/error" />
                     : dropdownComponents
