@@ -28,6 +28,7 @@ function LevelTwo() {
                     <div className="col">
                         <Card 
                             id={topic.id}
+                            image={"http://localhost:8000"+topic.image}
                             name={topic.name}
                             description={topic.description}
                             prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
