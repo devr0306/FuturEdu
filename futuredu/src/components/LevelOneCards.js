@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
+import "../style/level-one-cards.css";
+
 const LevelOneCards = props => {
 
     let { url } = useRouteMatch();
