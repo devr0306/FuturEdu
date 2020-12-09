@@ -15,24 +15,25 @@ svg{
     padding: 15%;
 }
 .future{
-    color: grey;
+    color: #008ecc;
     font-family: 'Raleway', sans-serif;
 }
 
 .learn{
-    border: 2px solid #6c63ff;
-    background: transparent;
+    border: 2px solid grey;
     border-radius: 40px;
     padding: .6% 6% 1% 6%;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: #6c63ff;
+    color: black;
+    background: linear-gradient(#0080ff, grey);
+
 }
 
 .learn:hover{
-    background:#6c63ff;
-    color: white;
+    background: linear-gradient(rgb(173, 167, 167), black);
+    color: #0080ff;
 }
     border: 2px solid;
 
