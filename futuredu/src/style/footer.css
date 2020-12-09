@@ -1,0 +1,18 @@
+footer{
+    background: #dededc;
+}
+
+#footer-links{
+    font-size: 1rem;
+    font-family: Inter;
+}
+
+#footer-links::after{
+    content: " | ";
+    color: silver;
+    font-size: 18px;
+}
+
+#social-media-links{
+    font-size: 40px;
+}
