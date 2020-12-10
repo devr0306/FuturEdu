@@ -2,7 +2,7 @@
 body{
     overflow-x:hidden;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(0.25turn, white, rgb(218, 212, 212), white);
+    background: linear-gradient(0.25turn, rgb(206, 203, 203), rgb(163, 158, 158), rgb(206, 203, 203));
     /*radial-gradient(circle at 100%, rgb(231, 226, 226), rgb(235, 226, 226) 50%, #eee 75%, rgb(230, 223, 223) 75%);*/
 }
 svg{
