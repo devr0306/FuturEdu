@@ -2,6 +2,8 @@
 body{
     overflow-x:hidden;
     font-family: 'Inter', sans-serif;
+    background: linear-gradient(0.25turn, rgb(206, 203, 203), rgb(163, 158, 158), rgb(206, 203, 203));
+    /*radial-gradient(circle at 100%, rgb(231, 226, 226), rgb(235, 226, 226) 50%, #eee 75%, rgb(230, 223, 223) 75%);*/
 }
 svg{
     height: 450px;
@@ -13,6 +15,7 @@ svg{
 
 .description{
     padding: 15%;
+    /*color: #fff;*/
 }
 .future{
     color: #008ecc;
@@ -27,13 +30,13 @@ svg{
     font-size: 20px;
     font-weight: bold;
     color: black;
-    background: linear-gradient(#0080ff, grey);
+    background: radial-gradient(#b8bcc0, #0080ff 75%);/*linear-gradient(#0080ff, grey)*/;
 
 }
 
 .learn:hover{
-    background: linear-gradient(rgb(173, 167, 167), black);
-    color: #0080ff;
+    background: radial-gradient( #e4e5e6, #0080ff 75%);
+    color: #000;
 }
     border: 2px solid;
 

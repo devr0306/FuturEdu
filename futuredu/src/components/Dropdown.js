@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Markdown from 'markdown-to-jsx';
 
+import "../style/dropdown.css";
+
 const Dropdown = props => {
 
     const [isToggle, setToggle] = useState(false)
