@@ -4,7 +4,7 @@ import "../style/footer.css";
 
 function Footer(){
     return(
-        <footer className="footer py-4 mt-3">
+        <footer className="footer py-4 mt-5">
             <div className="container-fluid">
                 <div className="row justify-content-between">
                     <div className="col-3">
