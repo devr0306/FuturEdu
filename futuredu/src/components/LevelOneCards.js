@@ -8,8 +8,8 @@ const LevelOneCards = props => {
     let { url } = useRouteMatch();
 
     return (
-        <div className="col-4 mb-5">
-            <div className="card text-dark" id={props.id}>
+        <div className="col-auto mt-5 mb-3" style={{minWidth:"22rem",maxWidth:"27rem"}}>
+            <div className="card text-dark shadow" id={props.id}>
                 <Link to={`${url}/`+props.id}>
                     <img src={props.image} className="card-img-top" alt={props.name+"Image"} />
                 </Link>

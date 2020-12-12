@@ -3,20 +3,3 @@
     height: 15vw;
     object-fit: cover;
 }
-.col-md-4{
-    background: linear-gradient(0.25turn, rgb(100, 97, 97), grey);
-}
-.col-md-8{
-    background: linear-gradient(0.25turn, rgb(100, 97, 97), grey);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.card-title{
-    color: #000080;
-}
-.card-text{
-    color: black;
-}
-.text-muted{
-    color: #008ecc;
-}

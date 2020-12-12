@@ -1,7 +1,7 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route,useLocation } from 'react-router-dom';
 
-import Header from "./components/Header"
+import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import ErrorPage from "./components/Error";
 import LevelOne from "./components/LevelOne";
@@ -9,9 +9,15 @@ import LevelTwo from "./components/LevelTwo";
 import LevelThree from "./components/LevelThree";
 
 function App() {
+
+    let location = useLocation();
+
     return (
         <div>
-            <Header />
+            {location.pathname === "/"
+                ? null
+                : <Header Color={"black"} />
+            }
             <Switch>
                 <Route path="/error" component={ErrorPage} exact/>
                 <Route path="/:lvlone/:lvltwo/:lvlthree" component={LevelThree} />

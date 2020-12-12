@@ -10,9 +10,9 @@ import Carousel from "./Carousel";
 
 function Homepage(){
     return(
-
-        <div className="container-fluid">
+        <div>
             <Carousel />
+        <div className="container-fluid">
             <div className="row d-flex">
                 <div class='svg-div col-md col'>
                     <EmerginTechSvg />
@@ -40,6 +40,7 @@ function Homepage(){
                 </div>    
             </div>
             </div>        
+        </div>
         </div>
     )
 }

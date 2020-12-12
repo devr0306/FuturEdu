@@ -7,9 +7,11 @@ import EmergingTechImg from "../assets/earth.jpg";
 import SkillsImg from "../assets/stocks_unsplash.jpg";
 import PrereqsImg from "../assets/coding2.jpg";
 
+import Navbar from "./Header";
+
 function Carousel() {
     return (
-        <div id="carouselControls" className="carousel slide" data-ride="carousel">
+        <div id="carouselControls" className="carousel slide my-0" data-ride="carousel">
 
             <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -18,6 +20,7 @@ function Carousel() {
             </ol>
 
             <div className="carousel-inner">
+                <Navbar />
                 <div className="carousel-item active">
                     <img className="carousel-image" src={EmergingTechImg} alt="Emerging Tech" />
                     <div className="carousel-caption">

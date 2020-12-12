@@ -1,6 +1,21 @@
+.navbar-wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1
+}
+
+.navbar{
+    background: transparent;
+}
+
 .nav-link{
     font-family: 'Inter', sans-serif;
     padding: 0px 10px;
+}
+
+#carouselControls{
+    margin-top: 0px;
 }
 
 #logo-text{

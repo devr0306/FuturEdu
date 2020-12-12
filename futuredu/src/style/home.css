@@ -2,8 +2,6 @@
 body{
     overflow-x:hidden;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(0.25turn, rgb(206, 203, 203), rgb(163, 158, 158), rgb(206, 203, 203));
-    /*radial-gradient(circle at 100%, rgb(231, 226, 226), rgb(235, 226, 226) 50%, #eee 75%, rgb(230, 223, 223) 75%);*/
 }
 svg{
     height: 450px;
@@ -18,28 +16,20 @@ svg{
     /*color: #fff;*/
 }
 .future{
-    color: #008ecc;
     font-family: 'Raleway', sans-serif;
 }
 
 .learn{
-    border: 2px solid grey;
     border-radius: 40px;
     padding: .6% 6% 1% 6%;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: black;
-    background: radial-gradient(#b8bcc0, #0080ff 75%);/*linear-gradient(#0080ff, grey)*/;
-
 }
 
 .learn:hover{
-    background: radial-gradient( #e4e5e6, #0080ff 75%);
-    color: #000;
-}
     border: 2px solid;
-
+}
 
 .description-1{
     padding: 10% !important;
