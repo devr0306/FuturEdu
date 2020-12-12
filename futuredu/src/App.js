@@ -7,6 +7,7 @@ import ErrorPage from "./components/Error";
 import LevelOne from "./components/LevelOne";
 import LevelTwo from "./components/LevelTwo";
 import LevelThree from "./components/LevelThree";
+import Footer from './components/Footer';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/:lvlone" component={LevelOne} />
                 <Route path="/" component={Homepage} exact />
             </Switch>
+            <Footer />
         </div>
     )
 }
