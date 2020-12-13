@@ -11,7 +11,7 @@ const LevelOne = () => {
     
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlone +"?format=json")
+            const res = await fetch("http://157.230.189.117:8000/app/category/"+ lvlone +"?format=json")
             const cards = await res.json()
             setCardsData(cards.card_set)
         }
@@ -34,8 +34,8 @@ const LevelOne = () => {
     }
     
     return(
-        <div className="container">
-            <div className="row pt-5">
+        <div className="container mb-5">
+            <div className="row justify-content-center pt-5">
                 {!CardComponents
                     ? <Redirect to="/error" />
                     : CardComponents

@@ -3,7 +3,7 @@ import { useParams, Redirect } from "react-router-dom";
 
 import Dropdown from "./Dropdown";
 
-import LevelThreeData from "../datasets/LevelThreeData";
+import "../style/dropdown.css";
 
 const LevelThree = () =>{
 
@@ -14,7 +14,7 @@ const LevelThree = () =>{
 
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlthree +"?format=json")
+            const res = await fetch("http://157.230.189.117:8000/app/category/"+ lvlthree +"?format=json")
             const cards = await res.json()
             setTopicData(cards.topic_set)
             setTopicName(cards.name)
@@ -34,7 +34,7 @@ const LevelThree = () =>{
 
     return(
         <div className="container">
-            <div className="card bg-light my-4 w-100">
+            <div className="card bg-light w-100" id="dropdown-holder">
                 <div className="card-header text-center bg-dark text-white h4">{topicName}</div>
                 {!dropdownComponents
                     ? <Redirect to="/error" />

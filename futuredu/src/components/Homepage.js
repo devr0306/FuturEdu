@@ -10,15 +10,15 @@ import Carousel from "./Carousel";
 
 function Homepage(){
     return(
-
-        <div className="container-fluid">
+        <div>
             <Carousel />
+        <div className="container-fluid">
             <div className="row d-flex">
                 <div class='svg-div col-md col'>
                     <EmerginTechSvg />
                 </div>
                 <div className='col col-md description' data-aos="fade-left">
-                    <h2>Learn Emerging Technologies and Skills to make yourself<br /><span className='future'> Future Ready</span></h2>
+                    <h2>Learn Emerging Technologies and Skills to make yourself<span className='future'> Future Ready</span></h2>
                     <Link to="/etech"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
@@ -36,10 +36,11 @@ function Homepage(){
                 </div>
                 <div className='col col-md description-2'>
                     <h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
-                    <Link to="/etech"><button className='learn'>Learn</button></Link>
+                    <Link to="/skills"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
             </div>        
+        </div>
         </div>
     )
 }

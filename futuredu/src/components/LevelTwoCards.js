@@ -10,7 +10,7 @@ const LevelTwoCards = props => {
     return (
         <Link to={`${url}/`+props.id}>
 
-        <div className="card mb-3 text-dark">
+        <div className="card mt-5 mb-3 text-dark shadow">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={props.image} className="card-img" alt={"Image of " + props.name} />

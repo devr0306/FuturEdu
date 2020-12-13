@@ -12,7 +12,7 @@ function LevelTwo() {
 
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvltwo +"?format=json")
+            const res = await fetch("http://157.230.189.117:8000/app/category/"+ lvltwo +"?format=json")
             const cards = await res.json()
             setCardsData(cards.card_set)
         }

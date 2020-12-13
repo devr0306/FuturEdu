@@ -1,0 +1,25 @@
+footer{
+    background: #dededc;
+}
+
+#footer-links{
+    font-size: 1rem;
+    font-family: Inter;
+}
+
+#logo{
+    width: 12rem;
+    height: 5rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+#footer-links::after{
+    content: " | ";
+    color: silver;
+    font-size: 18px;
+}
+
+#social-media-links{
+    font-size: 40px;
+}

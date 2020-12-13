@@ -13,29 +13,24 @@ svg{
 
 .description{
     padding: 15%;
+    /*color: #fff;*/
 }
 .future{
-    color: grey;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
+    color: rgb(105, 100, 100);
 }
 
 .learn{
-    border: 2px solid #6c63ff;
-    background: transparent;
     border-radius: 40px;
     padding: .6% 6% 1% 6%;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: #6c63ff;
 }
 
 .learn:hover{
-    background:#6c63ff;
-    color: white;
-}
     border: 2px solid;
-
+}
 
 .description-1{
     padding: 10% !important;
