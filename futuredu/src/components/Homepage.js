@@ -18,7 +18,7 @@ function Homepage(){
                     <EmerginTechSvg />
                 </div>
                 <div className='col col-md description' data-aos="fade-left">
-                    <h2>Learn Emerging Technologies and Skills to make yourself<br /><span className='future'> Future Ready</span></h2>
+                    <h2>Learn Emerging Technologies and Skills to make yourself<span className='future'> Future Ready</span></h2>
                     <Link to="/etech"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
