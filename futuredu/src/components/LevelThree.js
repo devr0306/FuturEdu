@@ -14,7 +14,7 @@ const LevelThree = () =>{
 
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch("http://127.0.0.1:8000/app/category/"+ lvlthree +"?format=json")
+            const res = await fetch("http://157.230.189.117:8000/app/category/"+ lvlthree +"?format=json")
             const cards = await res.json()
             setTopicData(cards.topic_set)
             setTopicName(cards.name)
