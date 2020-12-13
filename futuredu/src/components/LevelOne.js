@@ -34,8 +34,8 @@ const LevelOne = () => {
     }
     
     return(
-        <div className="container">
-            <div className="row pt-5">
+        <div className="container mb-5">
+            <div className="row justify-content-center pt-5">
                 {!CardComponents
                     ? <Redirect to="/error" />
                     : CardComponents

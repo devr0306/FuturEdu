@@ -2,14 +2,15 @@ import React from "react";
 
 import "../style/footer.css";
 
+import Logo from "../assets/logo.png";
+
 function Footer(){
     return(
         <footer className="footer py-4 mt-5">
             <div className="container-fluid">
                 <div className="row justify-content-between">
                     <div className="col-3">
-                        <img className="img-thumbnail" src='' alt="Logo" />
-                        <h3 className="d-inline">FuturEdu</h3>
+                        <img id="logo" className="img" src={Logo} alt="Logo" />
                     </div>
                     <div className="col-6 text-right">
                         <ul className="d-inline">

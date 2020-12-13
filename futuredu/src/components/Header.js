@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import "../style/header.css";
 
+import Logo from "../assets/logo.png";
+
 function Header(props){
 
     let color = "white";
@@ -15,7 +17,7 @@ function Header(props){
     return (
         <div className="navbar-wrapper" style={{position:pos}}>
         <nav className="navbar navbar-expand-lg navbar-light">
-            <Link to="/"><a className={"navbar-brand text-"+color} id="logo-text" href="#">FuturEdu</a></Link>
+            <Link to="/"><img id="logo" src={Logo} href="/" alt="Logo"/></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon">
                     <i class="fas fa-bars" style={{color:color, fontSize:"28px"}}></i>
