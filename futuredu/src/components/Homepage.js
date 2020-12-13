@@ -36,7 +36,7 @@ function Homepage(){
                 </div>
                 <div className='col col-md description-2'>
                     <h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
-                    <Link to="/etech"><button className='learn'>Learn</button></Link>
+                    <Link to="/skills"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
             </div>        
