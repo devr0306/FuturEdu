@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams,Redirect } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 
 import Card from "./LevelTwoCards";
 
@@ -8,27 +8,27 @@ function LevelTwo() {
 
     let { lvltwo } = useParams();
 
-    const [ cardsData, setCardsData ] = useState([]);
+    const [cardsData, setCardsData] = useState([]);
 
     useEffect(() => {
         const fetchCardData = async () => {
-            const res = await fetch("http://157.230.189.117:8000/app/category/"+ lvltwo +"?format=json")
+            const res = await fetch("http://157.230.189.117:8000/app/category/" + lvltwo + "?format=json")
             const cards = await res.json()
             setCardsData(cards.card_set)
         }
         fetchCardData()
-    },[lvltwo])
+    }, [lvltwo])
 
     let CardComponents;
 
-    if(cardsData){
+    if (cardsData) {
         CardComponents = cardsData.map(topic => {
-            return(
+            return (
                 <div className="row mt-4 mb-3">
                     <div className="col">
-                        <Card 
+                        <Card
                             id={topic.id}
-                            image={"http://localhost:8000"+topic.image}
+                            image={"http://157.230.189.117:8000" + topic.image}
                             name={topic.name}
                             description={topic.description}
                             prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
