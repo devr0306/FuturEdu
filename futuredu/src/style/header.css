@@ -14,14 +14,6 @@
     padding: 0px 10px;
 }
 
-.navbar-brand{
-
-    font-weight: 500;
-    background: -webkit-linear-gradient(0.3turn, #0080ff, rgb(80, 78, 78));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #carouselControls{
     margin-top: 0px;
 }

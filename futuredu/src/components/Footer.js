@@ -6,13 +6,13 @@ import Logo from "../assets/logo.png";
 
 function Footer(){
     return(
-        <footer className="footer py-4 mt-5">
-            <div className="container-fluid">
+        <footer className="footer py-3 mt-5 mb-0">
+            <div className="container-fluid navbar-fixed-bottom">
                 <div className="row justify-content-between">
                     <div className="col-3">
                         <img id="logo" className="img" src={Logo} alt="Logo" />
                     </div>
-                    <div className="col-6 text-right">
+                    <div className="col-6 my-auto text-right">
                         <ul className="d-inline">
                             <a id="footer-links" href="/"><li className="d-inline">Home</li></a>
                             <a id="footer-links" href="/prereqs"><li className="d-inline">Prerequisites</li></a>

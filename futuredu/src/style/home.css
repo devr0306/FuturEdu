@@ -5,6 +5,7 @@ body{
 }
 svg{
     height: 450px;
+    width: 70vw;
 }
 
 .svg-div{
@@ -26,10 +27,12 @@ svg{
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.2s;
 }
 
 .learn:hover{
-    border: 2px solid;
+    color:#000000;
+    background-color:#FFFFFF;
 }
 
 .description-1{
