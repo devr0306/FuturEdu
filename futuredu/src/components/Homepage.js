@@ -17,29 +17,29 @@ function Homepage(){
                 <div class='svg-div col-md col'>
                     <EmerginTechSvg />
                 </div>
-                <div className='col col-md description' data-aos="fade-left">
+                <div className='col col-md description-1 ml-3' data-aos="fade-left">
                     <h2>Learn Emerging Technologies and Skills to make yourself<span className='future'> Future Ready</span></h2>
                     <Link to="/etech"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
             <div className="row d-flex">
+                <div class='svg-div col-md col'>
+                    <SkillsSvg />      
+                </div>
                 <div className='col col-md description-1 ml-3' data-aos="fade-left">
                     <h1>With <span className='future'>specialized prerequisites</span> to <br />remove all the obstacles from your learning</h1>
                     <Link to="/prereqs"><button className='learn'>Learn</button></Link>
                 </div>  
-                <div class='svg-div col-md col'>
-                    <SkillsSvg />      
-                </div>
+            </div>
                 <div className="row d-flex">
-                <div class='svg-div-1 col-md col'>
+                <div class='svg col-md col'>
                     <PrereqsSvg />
                 </div>
-                <div className='col col-md description-2'>
+                <div className='col col-md description-1 ml-3'>
                     <h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
                     <Link to="/skills"><button className='learn'>Learn</button></Link>
                 </div>    
             </div>
-            </div>        
         </div>
         </div>
     )

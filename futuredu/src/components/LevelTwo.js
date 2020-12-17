@@ -24,7 +24,7 @@ function LevelTwo() {
     if (cardsData) {
         CardComponents = cardsData.map(topic => {
             return (
-                <div className="row mt-4 mb-3">
+                <div className="row mb-3">
                     <div className="col">
                         <Card
                             id={topic.id}
