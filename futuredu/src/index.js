@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import'bootstrap/dist/js/bootstrap.bundle.min';
+import jquery from 'jquery';
 
 ReactDOM.render(
   <React.StrictMode>

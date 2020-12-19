@@ -9,14 +9,15 @@ import PrereqsImg from "../assets/coding2.jpg";
 
 import Navbar from "./Header";
 
-function Carousel() {
+const Carousel = () => {
+
     return (
         <div id="carouselControls" className="carousel slide my-0" data-ride="carousel">
 
             <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselControls" data-slide-to="0" className="active"></li>
+                <li data-target="#carouselControls" data-slide-to="1"></li>
+                <li data-target="#carouselControls" data-slide-to="2"></li>
             </ol>
 
             <div className="carousel-inner">
