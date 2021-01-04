@@ -25,20 +25,32 @@ function Footer(){
                 <hr />
                 <div className="row justify-content-center mb-3">
                     <div className="col-1 text-center">
-                        <button 
-                            className="fab fa-instagram" 
-                            id="social-media-links" 
-                            type="button" 
+                    <a 
+                            href="http://localhost:3000/error" 
+                            id="social-media-links"
                             target="_blank"
-                        />
+                        >
+                            <i className="fab fa-instagram"/>
+                        </a>
                     </div>
                     <div className="col-1 text-center">
-                        <button 
-                            className="fab fa-linkedin-in" 
-                            id="social-media-links" 
-                            type="button" 
+                        <a 
+                            href="https://www.linkedin.com/company/futuredu/" 
+                            id="social-media-links"
                             target="_blank"
-                        />
+                        >
+                            <i className="fab fa-linkedin-in"/>
+                        </a>
+                    </div>
+                    
+                    <div className="col-1 text-center">
+                        <a 
+                            href="mailto:futuredu.management@gmail.com" 
+                            id="social-media-links"
+                            target="_blank"
+                        >
+                            <i className="far fa-envelope"/>
+                        </a>
                     </div>
                 </div>
             </div>
