@@ -28,10 +28,13 @@ function Homepage(){
                     </div>    
                 </FadeIn>
             </div>
+
             <div className="row d-flex">
-                <div class='svg-div col-md col'>
-                    <SkillsSvg />      
-                </div>
+                <FadeIn>
+                    <div class='svg-div col-md col'>
+                        <SkillsSvg />      
+                    </div>
+                </FadeIn>
                 <FadeIn>
                     <div className='col col-md description-1 ml-3' data-aos="fade-left">
                         <h1>With <span className='future'>specialized prerequisites</span> to <br />remove all the obstacles from your learning</h1>
