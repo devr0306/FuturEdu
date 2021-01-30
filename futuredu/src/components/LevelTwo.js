@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Redirect } from "react-router-dom";
 
 import Card from "./LevelTwoCards";
-
+import FadeIn from "./FadeIn"
 
 function LevelTwo() {
 
@@ -24,17 +24,19 @@ function LevelTwo() {
     if (cardsData) {
         CardComponents = cardsData.map(topic => {
             return (
-                <div className="row mb-3">
-                    <div className="col">
-                        <Card
-                            id={topic.id}
-                            image={"http://157.230.189.117:8000" + topic.image}
-                            name={topic.name}
-                            description={topic.description}
-                            prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
-                        />
+                <FadeIn>
+                    <div className="row mb-3">
+                        <div className="col">
+                            <Card
+                                id={topic.id}
+                                image={"http://157.230.189.117:8000" + topic.image}
+                                name={topic.name}
+                                description={topic.description}
+                                prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
+                            />
+                        </div>
                     </div>
-                </div>
+                </FadeIn>
             )
         })
     }

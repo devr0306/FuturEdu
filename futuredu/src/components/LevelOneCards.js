@@ -15,7 +15,7 @@ const LevelOneCards = props => {
                 </Link>
                 <div className="card-body">
                     <Link to={`${url}/`+props.id}>
-                        <h5 className="card-title d-inline">{props.name}</h5>
+                        <a href={`${url}/`+props.id}><h5 className="card-title d-inline">{props.name}</h5></a>
                     </Link>
                     <button 
                         class="fas fa-angle-down float-right mt-1" 

@@ -19,13 +19,15 @@ function App() {
                 ? null
                 : <Header Color={"black"} />
             }
-            <Switch>
-                <Route path="/error" component={ErrorPage} exact/>
-                <Route path="/:lvlone/:lvltwo/:lvlthree" component={LevelThree} />
-                <Route path="/:lvlone/:lvltwo" component={LevelTwo} />
-                <Route path="/:lvlone" component={LevelOne} />
-                <Route path="/" component={Homepage} exact />
-            </Switch>
+            <div class="content">
+                <Switch>
+                    <Route path="/error" component={ErrorPage} exact/>
+                    <Route path="/:lvlone/:lvltwo/:lvlthree" component={LevelThree} />
+                    <Route path="/:lvlone/:lvltwo" component={LevelTwo} />
+                    <Route path="/:lvlone" component={LevelOne} />
+                    <Route path="/" component={Homepage} exact />
+                </Switch>
+            </div>
             <Footer />
         </div>
     )

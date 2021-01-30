@@ -17,7 +17,7 @@ const LevelTwoCards = props => {
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
-                        <h5 className="card-title">{props.name}</h5>
+                        <a href={`${url}/`+props.id}><h5 className="card-title">{props.name}</h5></a>
                         <p className="card-text">{props.description}</p>
                         {props.prerequisites != null 
                         ?    <div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Redirect, useParams } from "react-router-dom";
 
 import Card from "./LevelOneCards";
+import FadeIn from "./FadeIn";
 
 const LevelOne = () => {
 
@@ -23,13 +24,13 @@ const LevelOne = () => {
 
     if (cardsData) {
         CardComponents = cardsData.map(topic => {
-            return (<Card
+            return (<FadeIn><Card
                 id={topic.id}
                 image={"http://157.230.189.117:8000" + topic.image}
                 name={topic.name}
                 description={topic.description}
                 prerequisites={topic.prerequisites ? topic.prerequisites : undefined}
-            />)
+            /></FadeIn>)
         })
     }
 
