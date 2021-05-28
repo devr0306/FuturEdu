@@ -6,12 +6,28 @@
 }
 
 .navbar{
-    background: transparent;
+    background: rgba(33,30,40,0.65);
 }
 
 .nav-link{
     font-family: 'Inter', sans-serif;
     padding: 0px 10px;
+}
+
+li{
+	margin-left:25px;
+}
+
+a:active{
+	color: white;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: white;
 }
 
 #carouselControls{
