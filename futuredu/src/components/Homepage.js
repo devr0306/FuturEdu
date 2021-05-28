@@ -16,44 +16,44 @@ function Homepage(){
             <Carousel />
         <div className="container-fluid">
             <div className="row d-flex">
-                <FadeIn>
-                    <div class='svg-div col-md col'>
-                        <EmerginTechSvg />
-                    </div>
-                </FadeIn>
-                <FadeIn>
-                    <div className='col col-md description-1 ml-3' data-aos="fade-left">
+				<div class='svg-div col-md col'>
+					<FadeIn>
+						<EmerginTechSvg />
+					</FadeIn>
+				</div>
+				<div className='col col-md description-1 ml-3' data-aos="fade-left">
+					<FadeIn>
                         <h2>Learn Emerging Technologies and Skills to make yourself<span className='future'> Future Ready</span></h2>
                         <Link to="/etech"><button className='learn'>Learn</button></Link>
-                    </div>    
-                </FadeIn>
+                    </FadeIn>
+				</div>    
             </div>
-
             <div className="row d-flex">
-                <FadeIn>
-                    <div class='svg-div col-md col'>
-                        <SkillsSvg />      
-                    </div>
-                </FadeIn>
-                <FadeIn>
-                    <div className='col col-md description-1 ml-3' data-aos="fade-left">
+                <div class='svg-div col-md col'>
+					<FadeIn>
+                        <SkillsSvg />  
+					</FadeIn>
+				</div>
+                <div className='col col-md description-1 ml-3' data-aos="fade-left">
+					<FadeIn>
                         <h1>With <span className='future'>specialized prerequisites</span> to <br />remove all the obstacles from your learning</h1>
                         <Link to="/prereqs"><button className='learn'>Learn</button></Link>
-                    </div>  
-                </FadeIn>
+					</FadeIn>
+				</div>  
+                
             </div>
-                <div className="row d-flex">
-                    <FadeIn>    
-                        <div class='svg-div col-md col'>
-                            <PrereqsSvg />
-                        </div>
-                    </FadeIn>
-                    <FadeIn>
-                        <div className='col col-md description-1 ml-3'>
-                            <h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
-                            <Link to="/skills"><button className='learn'>Learn</button></Link>
-                        </div>    
-                    </FadeIn>
+			<div className="row d-flex"> 
+				<div class='svg-div col-md col'>
+					<FadeIn>
+						<PrereqsSvg />
+					</FadeIn>
+				</div>
+				<div className='col col-md description-1 ml-3'>
+					<FadeIn>			
+						<h2>Learn exciting skills like<span className='future'> Trading</span> which are not taught in school &amp; colleges</h2>
+						<Link to="/skills"><button className='learn'>Learn</button></Link>  
+					</FadeIn>
+				</div>
             </div>
         </div>
         </div>
