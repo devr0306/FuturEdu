@@ -6,28 +6,21 @@
 }
 
 .navbar{
-    background: rgba(33,30,40,0.65);
+    background: rgba(0,0,0,.25);
 }
 
-.nav-link{
+.nav-link a:link,
+.nav-link a:visited,
+.nav-link a:hover,
+.nav-link a:active
+{
     font-family: 'Inter', sans-serif;
     padding: 0px 10px;
+	color: white;
 }
 
 li{
 	margin-left:25px;
-}
-
-a:active{
-	color: white;
-}
-
-a:link{
-	color: white;
-}
-
-a:visited{
-	color: white;
 }
 
 #carouselControls{
